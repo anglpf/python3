@@ -28,6 +28,7 @@ target = open(filename, 'r+')
 target.seek(0)
 print("After opening, the file says: \n", target.read())
 
+target.seek(0)
 print("Truncating the file. Goodbye!")
 target.truncate()
 
