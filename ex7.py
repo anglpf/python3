@@ -1,0 +1,32 @@
+print("Mary had a little lamb.")
+print("It's fleece was white as {}.".format('snow'))
+print("And everywhere that Mary went.")
+print("." * 10) # This writes ten '.'s
+
+### Run this to get the output to save time creating variables below
+# for i in range(1,13): # Includes 1, excludes 13 – so it goes to 12.
+#     print(f"end{i} = \"\"")
+
+end1 = "C"
+end2 = "h"
+end3 = "e"
+end4 = "e"
+end5 = "s"
+end6 = "e"
+end7 = "B"
+end8 = "u"
+end9 = "r"
+end10 = "g"
+end11 = "e"
+end12 = "r"
+
+### Use this to print the code needed below.
+# x = ""
+# for i in range(1,12):
+#     x += "end{}".format(i)
+#     x += " + "
+# x += "end12"
+# print(x)
+
+print(end1 + end2 + end3 + end4 + end5 + end6, end=' ')
+print(end7 + end8 + end9 + end10 + end11 + end12)
