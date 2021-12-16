@@ -12,8 +12,8 @@ class Dog(Animal):
         ## Dog has-a attribute name whose value is name.
         self.name = name
 
-    def woof(name):
-        print(f"{name} goes woof!")
+    def woof(self):
+        print(f"{self.name} goes woof!")
 
 
 ## Cat is-a Animal
@@ -23,8 +23,8 @@ class Cat(Animal):
         ## Cat has-a attribute name whose value is name.
         self.name = name
 
-    def meow(name):
-        print(f"{name} goes meow!")
+    def meow(self):
+        print(f"{self.name} goes meow!")
 
 
 ## Person is-a object
@@ -37,6 +37,9 @@ class Person(object):
         ## Person has-a pet of some kind
         self.pet = None
 
+    def hello(self):
+        print(f"{self.name} says hello!")
+
 ## Employee is-a Person
 class Employee(Person):
 
@@ -45,6 +48,10 @@ class Employee(Person):
         super(Employee, self).__init__(name)
         ## Employee has-a salary
         self.salary = salary
+
+    def please(self):
+        print(f"{self.name} would like a raise.")
+
 
 ## Fish is-a object
 class Fish(object):
@@ -87,9 +94,13 @@ crouse = Salmon()
 harry = Halibut()
 
 
-rover.woof()
 satan.meow()
+rover.woof()
 rover.oink()
+
+mary.hello()
+frank.please()
+frank.hello()
 
 
 """
